@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập thực hành 5 </title>
+
+    
+</head>
+<body>
+    <section class="Bài tập 1  Quản lý tuyển sinh"></section>
+    <h3>Bài tập 1 Quản lý tuyển sinh</h3>
+    <table border="1">
+        
+        <tr>
+            <th colspan="2">Bảng điểm</th>
+            <th rowspan="2">Toán</th>
+            <th rowspan="2">Lý</th>
+            <th rowspan="2">Hóa</th>
+            <th colspan="4"; rowspan="2">Khu vực</th>
+            <th rowspan="2", colspan="4">Đối tượng</th>
+        </tr>
+        <tr>
+            <th>STT</th>
+            <th>Họ tên</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Nguyễn Văn A </td>
+            <form>
+            <td><input type="number" id="diemToan"></td>
+            <td><input type="number" id="diemLy"></td>
+            <td><input type="number" id="diemHoa"></td>
+            <td><input name = "kiemtra" type="radio" id="khuVucA">A</td>
+            <td><input name = "kiemtra" type="radio" id="khuVucB">B</td>
+            <td><input name = "kiemtra" type="radio" id="khuVucC">C</td>
+            <td><input name = "kiemtra" type="radio" id="khongUuTien" >Không ưu tiên</td>
+            <td><input name = "doituong" type="radio" id="doiTuong1" >1</td>
+            <td><input name = "doituong" type="radio" id="doiTuong2" >2</td>
+            <td><input name = "doituong" type="radio" id="doiTuong3" >3</td>
+            <td><input name = "doituong" type="radio" id="doiTuongKhongUuTien" >Không ưu tiên</td>
+            </form>
+
+        </tr>
+        <tr>
+            <td>2</td>
+            <td align="center" colspan=" 4">Điểm tốt nghiệp của Bộ</td>
+            <td align="center" colspan="8" id="diemChuan">7 điểm</td>
+        </tr>
+    </table>
+    <button onclick="kiemTraNao()"> Kiếm Tra điểm thi</button>
+    <span id="kiemTra"></span> 
+    <span id="ketQua"></span> 
+
+
+    <section class="Bài tập 2 tính tiền điện">
+        <h3>Bài tập 2 tính tiền điện</h3>
+        
+            Họ Tên:<br>
+            <input type="text" id="tenNguoiDung">
+            <br>
+            Số KW điện tiêu thụ:<br>
+            <input type="number" id="soDienDung">
+            <br>
+            <button onclick="tinhTienDien()">Tính tiền</button>
+            <br>
+            <span id="hoVaTen"></span>
+            <br>
+            <span id="soTienDien"></span>
+
+            
+
+
+
+
+
+    </section>
+
+
+
+
+    <script src="./JS/main.js"></script>
+</body>
+</html>
